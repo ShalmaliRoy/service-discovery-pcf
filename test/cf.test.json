@@ -1,0 +1,182 @@
+{
+  "cfData": {
+    "infoData": {
+      "name": "",
+      "build": "",
+      "support": "test",
+      "version": 0,
+      "description": "Cloud Foundry sponsored by Pivotal",
+      "authorization_endpoint": "mockAuth",
+      "token_endpoint": "mockTken",
+      "min_cli_version": "6.22.0",
+      "min_recommended_cli_version": "latest",
+      "api_version": "2.113.0",
+      "app_ssh_endpoint": "ssh.run.pivotal.io:2222",
+      "app_ssh_host_key_fingerprint": "e7:13:4e:32:ee:39:62:df:54:41",
+      "app_ssh_oauth_client": "ssh-proxy",
+      "doppler_logging_endpoint": "wss://doppler.run.pivotal.io:443",
+      "routing_endpoint": "mock/routing"
+    },
+    "loginData": {
+      "access_token": "mockAccessToken",
+      "token_type": "bearer",
+      "refresh_token": "mockRefreshToken",
+      "expires_in": 599,
+      "scope": "openid uaa.user cloud_controller.read password.write cloud_controller.write",
+      "jti": "3daf0e74611a4"
+    },
+    "appData": {
+      "total_results": 2,
+      "total_pages": 1,
+      "prev_url": null,
+      "next_url": null,
+      "resources": [
+        {
+          "metadata": {
+            "guid": "903ee511-a079-4d3b-a31e-9a28b201a4e8",
+            "url": "/v2/apps/903ee511-a079-4d3b-a31e-9a28b201a4e8",
+            "created_at": "2017-12-20T00:12:45Z",
+            "updated_at": "2018-06-14T03:02:19Z"
+          },
+          "entity": {
+            "name": "test",
+            "production": false,
+            "space_guid": "4089606e-b5b8-45f2-8d5e-b29db3ea030e",
+            "stack_guid": "86205f38-84fc-4bc2-b2b8-af7f55669f04",
+            "buildpack": "https://github.com/cloudfoundry/nodejs-buildpack",
+            "detected_buildpack": "nodejs",
+            "detected_buildpack_guid": null,
+            "environment_json": {
+              "NODE_ENV": "development"
+            },
+            "memory": 128,
+            "instances": 1,
+            "disk_quota": 1024,
+            "state": "STARTED",
+            "version": "d7cb1ad9-7005-4634-9c84-f638c5d2421d",
+            "command": "node server.js",
+            "console": false,
+            "debug": null,
+            "staging_task_id": "1cff9adf-8a62-4dec-9f5e-2775c99105f0",
+            "package_state": "STAGED",
+            "health_check_type": "port",
+            "health_check_timeout": null,
+            "health_check_http_endpoint": null,
+            "staging_failed_reason": null,
+            "staging_failed_description": null,
+            "diego": true,
+            "docker_image": null,
+            "docker_credentials": {
+              "username": null,
+              "password": null
+            },
+            "package_updated_at": "2017-12-20T00:12:57Z",
+            "detected_start_command": "npm start",
+            "enable_ssh": true,
+            "ports": [
+              8080
+            ],
+            "space_url": "/v2/spaces/4089606e-b5b8-45f2-8d5e-b29db3ea030e",
+            "stack_url": "/v2/stacks/86205f38-84fc-4bc2-b2b8-af7f55669f04",
+            "routes_url": "/v2/apps/903ee511-a079-4d3b-a31e-9a28b201a4e8/routes",
+            "events_url": "/v2/apps/903ee511-a079-4d3b-a31e-9a28b201a4e8/events",
+            "service_bindings_url": "/v2/apps/903ee511-a079-4d3b-a31e-9a28b201a4e8/service_bindings",
+            "route_mappings_url": "/v2/apps/903ee511-a079-4d3b-a31e-9a28b201a4e8/route_mappings"
+          }
+        },
+        {
+          "metadata": {
+            "guid": "1e17c825-8764-4bc6-b3dd-2008e70dfb2b",
+            "url": "/v2/apps/1e17c825-8764-4bc6-b3dd-2008e70dfb2b",
+            "created_at": "2017-12-20T00:20:32Z",
+            "updated_at": "2018-06-14T03:02:48Z"
+          },
+          "entity": {
+            "name": "test-client",
+            "production": false,
+            "space_guid": "4089606e-b5b8-45f2-8d5e-b29db3ea030e",
+            "stack_guid": "86205f38-84fc-4bc2-b2b8-af7f55669f04",
+            "buildpack": "https://github.com/cloudfoundry/nodejs-buildpack",
+            "detected_buildpack": "nodejs",
+            "detected_buildpack_guid": null,
+            "environment_json": {
+              "NODE_ENV": "development"
+            },
+            "memory": 128,
+            "instances": 1,
+            "disk_quota": 1024,
+            "state": "STOPPED",
+            "version": "734a0e1b-4704-4e62-9d2b-366156c9317c",
+            "command": "node client.js",
+            "console": false,
+            "debug": null,
+            "staging_task_id": "8377e19d-8f60-4227-8ea1-35274de7e5df",
+            "package_state": "STAGED",
+            "health_check_type": "port",
+            "health_check_timeout": null,
+            "health_check_http_endpoint": null,
+            "staging_failed_reason": null,
+            "staging_failed_description": null,
+            "diego": true,
+            "docker_image": null,
+            "docker_credentials": {
+              "username": null,
+              "password": null
+            },
+            "package_updated_at": "2018-06-08T04:24:47Z",
+            "detected_start_command": "npm start",
+            "enable_ssh": true,
+            "ports": [
+              8080
+            ],
+            "space_url": "/v2/spaces/4089606e-b5b8-45f2-8d5e-b29db3ea030e",
+            "stack_url": "/v2/stacks/86205f38-84fc-4bc2-b2b8-af7f55669f04",
+            "routes_url": "/v2/apps/1e17c825-8764-4bc6-b3dd-2008e70dfb2b/routes",
+            "events_url": "/v2/apps/1e17c825-8764-4bc6-b3dd-2008e70dfb2b/events",
+            "service_bindings_url": "/v2/apps/1e17c825-8764-4bc6-b3dd-2008e70dfb2b/service_bindings",
+            "route_mappings_url": "/v2/apps/1e17c825-8764-4bc6-b3dd-2008e70dfb2b/route_mappings"
+          }
+        }
+      ]
+    },
+    "vcapData": [
+      {
+        "staging_env_json": {
+        },
+        "running_env_json": {
+        },
+        "environment_json": {
+          "NODE_ENV": "development"
+        },
+        "system_env_json": {
+          "VCAP_SERVICES": {
+          }
+        },
+        "application_env_json": {
+          "VCAP_APPLICATION": {
+            "cf_api": "mockUrl",
+            "limits": {
+              "fds": 16384,
+              "mem": 128,
+              "disk": 1024
+            },
+            "application_name": "test",
+            "application_uris": [
+              "test.cfapps.io"
+            ],
+            "name": "test",
+            "space_name": "development",
+            "space_id": "4089606e-b5b8-45f2-8d5e-b29db3ea030e",
+            "uris": [
+              "test.cfapps.io"
+            ],
+            "users": null,
+            "application_id": "903ee511-a079-4d3b-a31e-9a28b201a4e8",
+            "version": "d7cb1ad9-7005-4634-9c84-f638c5d2421d",
+            "application_version": "d7cb1ad9-7005-4634-9c84-f638c5d2421d"
+          }
+        }
+      }
+    ]
+  }
+}
