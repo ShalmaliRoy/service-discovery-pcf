@@ -59,7 +59,8 @@ function cloudInfo(options, patterns) {
       });
     })
       .catch((err) => {
-        reject(err.message);
+      console.log(err);
+        reject(err);
       });
   });
 }
