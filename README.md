@@ -28,4 +28,23 @@ NOTE
  A complete example can be found in the example folder.
  
  
+const Service = require('service-discovery-pcf');
+
+const service = new Service({ domain: 'https://api.run.pivotal.io', name: '*', password: '*' });
+
+
+
+app.use(service.find([{ pin: 'role:test' }]));
+
+
+    seneca.client = seneca.client(args.request$.clientUrl.get('role:test'));
+    seneca.act('role:test,cmd:test', callback);
+
+
+
+
+
+
+ 
+ 
  
