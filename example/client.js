@@ -33,7 +33,7 @@ const config = {
     parseBody: false },
 
 };
-app.use(service.find([{ pin: 'role:incidents' }]));
+app.use(service.find([{ pin: 'role:test' }]));
 
 seneca.use('test-service-call.js')
   .use(Web, config)
