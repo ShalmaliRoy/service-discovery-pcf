@@ -1,5 +1,5 @@
 /* eslint-disable no-shadow,consistent-return */
-const serviceDiscovery = require('./src/discover-service-pcf');
+const serviceDiscovery = require('./lib/discover-service-pcf');
 const Cache = require('node-cache');
 
 const cache = new Cache({ stdTTL: 1800, checkperiod: 600, useClones: false });
@@ -29,7 +29,7 @@ function createMiddleWare(pins, opt) {
     pins.forEach((pattern) => {
       if (pattern && pattern.pin) {
         const name = pattern.pin.split(':');
-        if (name.length !== 2) {
+        if (name.length < 2) {
           return next(new Error('Not a valid pattern. Valid formats role:service name or cmd:service name '));
         }
       } else {

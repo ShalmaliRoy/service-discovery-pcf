@@ -1,11 +1,11 @@
 {
-  "name": "service-discovery-cloudfoundry",
+  "name": "service-discovery-cf",
   "description": "Middleware for service discovery using seneca in cloud foundry",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "scripts": {
     "test": "npm-run-all eslint code-coverage test-report --continue-on-error",
-    "eslint": "eslint src/*.js",
+    "eslint": "eslint *.js",
     "code-coverage": "nyc --all mocha --timeout=5000",
     "test-report": "nyc report --reporter=lcov --reporter=json-summary"
   },
@@ -35,14 +35,20 @@
     "sinon": "^2.3.5"
   },
   "files": [
-    "service-discovery",
     "index.js",
-    "pcf",
-    "cf",
+    "lib/",
+	"example/",
+	"LICENSE",
+    "READNE.md"
+  ],
+  "keywords": [
+    "servicediscovery",
     "cloudfoundry",
-    "seneca cloud",
+    "cf",
+    "pcf",
+    "pivotalcloudfoundry",
     "cloud",
-    "pivotal"
+    "pattern"
   ],
   "author": "Shalmali Roy<royshalmali85@gmail.com>",
   "license": "MIT",
